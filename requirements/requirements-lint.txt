@@ -1,0 +1,6 @@
+black
+isort
+mypy
+pre-commit
+pre-commit-hooks
+pylint

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=70", "wheel", "setuptools_scm>=8", "setuptools_scm[toml]>=8"]
+
+[tool.setuptools_scm]
+
+[tool.pylint.main]
+extension-pkg-allow = ["pydantic"]
+ignore = ["tests", "venv"]
+
+[tool.pylint.format]
+max-line-length = 90
+
+[tool.pylint.reports]
+score = false
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = ["missing-module-docstring", "too-few-public-methods"]
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 90
