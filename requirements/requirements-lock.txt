@@ -1,10 +1,11 @@
 annotated-types==0.7.0
 anyio==4.4.0
-astroid==3.2.2
+astroid==3.2.3
 black==24.4.2
 certifi==2024.7.4
 cfgv==3.4.0
 click==8.1.7
+colorlog==6.8.2
 coverage==7.5.4
 dill==0.3.8
 distlib==0.3.8

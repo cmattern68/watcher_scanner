@@ -14,7 +14,7 @@ dev:
 .PHONY: run
 run:
 	$(VENV) && \
-	python3 -c "from src.watcher_scanner.one_shot_runner import OneShotRunner; OneShotRunner().run()"
+	python3 local.py
 
 .PHONY: fmt
 fmt:
