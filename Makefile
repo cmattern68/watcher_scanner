@@ -27,13 +27,17 @@ linting:
 	$(BLACK) src/ --check
 	pylint src/
 
+.PHONY: test
+test:
+	pytest -svv tests/
+
 .PHONY: coverage
 coverage:
 	pytest --cov=src/ tests/
 
 .PHONY: coverage-report
 coverage-report:
-	pytest --cov-report-html --cov=src/ tests/
+	pytest --cov-report=html:/var/www/watcher_scanner/ --cov=src/ tests/
 
 .PHONY: type-checkings
 type-checkings:

@@ -10,7 +10,7 @@ with open("requirements/requirements-lint.txt", "r", encoding="utf-8") as f:
 with open("requirements/requirements-src.txt", "r", encoding="utf-8") as f:
     SRC_REQUIREMENTS = f.read().splitlines()
 
-with open("requirements/requirements-test.txt", "r", encoding="utf-8") as f:
+with open("requirements/requirements-tests.txt", "r", encoding="utf-8") as f:
     TEST_REQUIREMENTS = f.read().splitlines()
 
 setup(

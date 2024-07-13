@@ -11,6 +11,20 @@ class ScannerExitStatus(IntEnum):
     UNKNOWN = 85
 
 
+class ScannerState(StrEnum):
+    """
+    Scanner Modules States
+    """
+
+    LOADED = "loaded"
+    FAILED = "failed"
+    NOT_FOUND = "not_found"
+    RUNTIME_ERROR = "runtime_errpr"
+    BUSY = "busy"
+    RUNNING = "running"
+    UNINITIALIZED = "uninitialized"
+
+
 class ScannerEnum(StrEnum):
     """
     All Available Scanners
